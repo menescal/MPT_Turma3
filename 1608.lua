@@ -86,7 +86,6 @@ botaoVerde:setFillColor (0, 1, 0) -- Preenchimento de verde
 
 -- Criação da função verifica toque
 function verificaToque( event )
-       
     if event.phase == "began" then -- Verifica a fase do  evento de entrada
         print ( "Entrada do toque")
     
@@ -109,7 +108,7 @@ botaoVermelho:addEventListener("touch", verificaToque)
 botaoVerde:addEventListener("touch", verificaToque)
 
 -- Exemplo 04 - Exemplo de Event Target
- 
+
 -- Criando o fundo da aplicação
 local bg = display.newRect( meioX, meioY, x, y )
 bg:setFillColor (0.5, 0, 1 ) 
@@ -141,7 +140,7 @@ botaoVermelho:addEventListener("touch", verificaToque)
 botaoVerde:addEventListener("touch", verificaToque)
 
 -- Exemplo 05 - Exemplo de Grupos
- 
+
 local grupoBg = display.newGroup() -- Criação do Grupo Background (BASE)
 local grupoJogo = display.newGroup() -- Criação do grupo de elementos do jogo (RECHEIO)
 local grupoGUI = display.newGroup() -- Criação do grupo da GUI (COBERTURA)
@@ -156,10 +155,10 @@ local jogador = display.newCircle( grupoJogo, meioX, meioY, 150 )
 -- Criação do Chão do Jogo
 local chao = display.newRect( grupoJogo, meioX, y*0.7, x, 200 )
 
-Exemplo 6 - Aplicando Aplha a todo o grupo.
+-- Exemplo 6 - Aplicando Aplha a todo o grupo.
 
 -- Aplicando o Alpha a todo o grupo do Jogo
 grupoJogo.alpha = 0.8
 
 
-Para finalizar o dia, exibir o exemplo do Jogo Highway Race
+-- Para finalizar o dia, exibir o exemplo do Jogo Highway Race

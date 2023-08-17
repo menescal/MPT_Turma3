@@ -66,5 +66,3 @@ end
 
 -- Timer
 timer.performWithDelay( 1000, transicao, 10 )
-
-
