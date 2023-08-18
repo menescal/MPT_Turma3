@@ -1,0 +1,26 @@
+
+local composer = require("composer") -- Importação da Biblioteca de Cena (Composer)
+
+local cena = composer.newScene( ) -- Criação da variável de cena.
+
+function cena:create( event ) -- Criação da função de cena.
+    local cenaCarregamento = self.view -- Criação da Variável de Exibição
+    
+    local x = display.contentWidth 
+    local y = display.contentHeight 
+
+    local meioX = display.contentCenterX 
+    local meioY = display.contentCenterY 
+
+    local circulo = display.newCircle( cenaCarregamento, meioX, meioY, 100 )
+
+    local quadrado = display.newRect( cenaCarregamento, meioX, y*0.7, 200, 200 )
+
+
+
+
+
+end
+
+cena:addEventListener("create", cena) -- Uso do Event Listener para exibir a cena
+return cena -- Return dá acesso aos demais arquivos de cenas criados
