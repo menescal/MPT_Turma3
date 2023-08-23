@@ -1,4 +1,5 @@
 
 local composer = require("composer")
 
+-- Informa em qual cena o jogo vai iniciar.
 composer.gotoScene( "cenas.carregamento"  )

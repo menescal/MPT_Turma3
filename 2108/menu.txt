@@ -1,0 +1,26 @@
+
+local composer = require("composer")
+
+local cena = composer.newScene(  )
+
+function cena:create( event )
+    local cenaMenu = self.view 
+
+    local x = display.contentWidth
+    local y = display.contentHeight  
+
+    local meioX = display.contentCenterX
+    local meioY = display.contentCenterY
+
+    local fundo = display.newImageRect( cenaMenu, "recursos/imagens/background.jpg", x, y)
+   
+    fundo.x = meioX
+    fundo.y = meioY
+
+
+end
+
+cena:addEventListener("create", cena)
+return cena
+
+

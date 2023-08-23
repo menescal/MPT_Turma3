@@ -1,0 +1,7 @@
+-- Remove de forma global a barra de status do projeto
+display.setStatusBar( display.HiddenStatusBar )
+
+local composer = require("composer")
+
+
+composer.gotoScene( "cenas.carregamento"  )
