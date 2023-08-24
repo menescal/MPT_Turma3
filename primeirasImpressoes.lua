@@ -2,7 +2,7 @@
 
 local meioX = display.contentCenterX -- irá pegar o centro da largura total da tela
 local meioY = display.contentCenterY -- irá pegar o centro da altura total da tela
-local x = display.contentWidth   vai de 0 a 1080
+local x = display.contentWidth -- vai de 0 a 1080
 local y = display.contentHeight -- Eixo y vai de 0 a 2400
 
 
@@ -100,9 +100,9 @@ bg.y = meioY -- Posso multiplica de 0 a 1
 
 -- Display New Polygon (Exibe um novo poligono)
 -- Criação de uma estrela.
- 
+
 local vertices = { 0,-110, 27,-35, 105,-35, 43,16, 65,90, 0,45, -65,90, -43,15, -105,-35, -27,-35, }
- --                                   x      y       
+--                                    x      y       
 local estrela = display.newPolygon( meioX, y*0.9, vertices )
 -- estrela.fill = { type="image", 
 -- filename="imagens/gustavo.png" }
@@ -141,7 +141,7 @@ function transicao( )
     transition.to( estrela, {
         time = 2000, 
         x = meioX - 200,
-          } )
+    } )
 end
 transicao()
 
@@ -196,4 +196,3 @@ timer.performWithDelay( 2500, moverEstrela, 5 )
 
 -- -- Criando a função tap - Toque simples.
 -- estrela:addEventListener("tap", colorirEstrela)
-local
